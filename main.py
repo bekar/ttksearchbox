@@ -32,5 +32,5 @@ if __name__ == '__main__':
     entrystyle()
     ttk.Entry(root, style="Search.entry", width=20).pack(expand=NO)
 
-    root.bind("<Key-Escape>", quit)
+    root.bind("<Key-Escape>", lambda event: quit())
     root.mainloop()
