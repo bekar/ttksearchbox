@@ -2,8 +2,12 @@
 
 # Translated from Tcl code by Schelte Bron, http://wiki.tcl.tk/18188
 
-from tkinter import *
-from tkinter import ttk
+try:
+    from tkinter import *
+    from tkinter import ttk
+except:
+    from Tkinter import *
+    import ttk
 
 import os
 filepath=os.path.abspath(__file__)
